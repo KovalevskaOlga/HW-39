@@ -1,0 +1,32 @@
+:root {
+  --dark: #212529;
+  --brand: #4e57d4;
+  --brand-light: #6970dd;
+  --brand-rgb: 78, 87, 212;
+  --body: #727272;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+
+a:hover {
+  color: blueviolet;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

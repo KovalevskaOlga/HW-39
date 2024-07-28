@@ -23,11 +23,75 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 a:hover {
   color: blueviolet;
+}
+
+header {
+  background-color: #9dedda;
+}
+.hero {
+  background: #d0cece;
 }
 
 img {
   max-width: 100%;
   height: auto;
+  width: 100%;
+  display: block;
+}
+.hero {
+  padding-bottom: 60px;
+}
+
+.cards {
+  display: flex;
+  gap: 40px;
+  padding-bottom: 20px;
+}
+
+.fish {
+  background-color: #8286c2;
+  background-image: url(/img/bg-river.webp);
+  background-repeat: no-repeat;
+  background-size: 10000px 1000px;
+  background-position: 50% 50%;
+}
+.fish-title {
+  text-align: center;
+  font-size: 70px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #94d20c, #1d06d0);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.rivers {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: rgb(192, 225, 225);
+}
+.lakes {
+  background-color: #608dbb;
+  padding-bottom: 60px;
+}
+.lake1 {
+  height: 303px;
+}
+.lake3 {
+  height: 303px;
+}
+footer {
+  background-color: #9dedda;
+}
+.foot-form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }

@@ -13,38 +13,320 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-        </div>
+    <header>
+      <div class="container-xl">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">FISHING</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#rivers"
+                    >річки</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">озера</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    риба
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#amur">Амур</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#korop">Короп</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#krasnopirka"
+                        >Краснопірка</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  пошук
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
       </div>
-    </nav>
+    </header>
+    <main>
+      <!-- hero -->
+      <section class="hero">
+        <div class="container-xl">
+          <div
+            id="carouselExampleControlsNoTouching"
+            class="carousel slide"
+            data-bs-touch="false"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="./img/fishing1.webp"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./img/fishing2.webp"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./img/fishing3.webp"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControlsNoTouching"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControlsNoTouching"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- cards -->
+      <section class="fish">
+        <div class="container-xl">
+          <h2 class="fish-title">Види риб в Україні</h2>
+          <div class="cards">
+            <div id="amur" class="card" style="width: 18rem">
+              <img src="./img/amur.webp" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Білий амур</h5>
+                <p class="card-text">
+                  Мешкає у прісноводних водоймах азіатських річок, що впадають в
+                  Тихий океан від Амура на півночі до Меконгу на півдні.
+                  Акліматизований у багатьох країнах Азії.
+                </p>
+              </div>
+            </div>
+            <div id="korop" class="card" style="width: 18rem">
+              <img src="./img/korop.webp" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Короп</h5>
+                <p class="card-text">
+                  Короп мешкає в річках басейнів Чорного, Азовського,
+                  Каспійського і Аральського морів, а також в Амурі. Дуже
+                  поширений в Україні.
+                </p>
+              </div>
+            </div>
+            <div id="krasnopirka" class="card" style="width: 18rem">
+              <img
+                src="./img/krasnopirka.webp"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Краснопірка</h5>
+                <p class="card-text">
+                  Краснопірка поширена у водоймах Європи до Уралу і басейну
+                  Аральського моря. У Сибіру вона відсутня. На Україні
+                  червоноперка мешкає в басейнах всіх річок.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- rivers -->
+      <section id="rivers" class="rivers">
+        <div class="container-xl">
+          <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/dnipro.jpg" class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Дніпро</h5>
+                  <p>
+                    Четверта за довжиною і третя за площею басейну річка Європи,
+                    річка з найдовшою течією в Україні.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./img/dyna.jpg" class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Дунай</h5>
+                  <p>
+                    Одна з найбільших рік Європи . Тече в межах 19-ти країн,
+                    зокрема Німеччини, Австрії, Словаччини, Угорщини, Сербії,
+                    Болгарії, Румунії, України (Одеська обл.).
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./img/bug.jpg" class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Південний Буг</h5>
+                  <p>
+                    Річка у Хмельницькій, Вінницькій, Кіровоградській та
+                    Миколаївській областях; єдина з великих річок України,
+                    басейн якої повністю розташований у її межах.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- lakes -->
+      <section class="lakes">
+        <div class="container-xl">
+          <div class="card-group">
+            <div class="card">
+              <img src="./img/lake2.jpg" class="card-img-top lake1" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Світязь</h5>
+                <p class="card-text">
+                  Найглибше озеро України. Від поверхні до дна - 58 м, що
+                  учетверо глибше від Азовського моря. Озеро ідеальне для
+                  відпочинку: на дні дрібний пісок, а вода добре прогрівається.
+                </p>
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./img/lake1.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Бребенескул</h5>
+                <p class="card-text">
+                  Bважається найбільш високогірним озером України. Розташоване
+                  воно на схилі Чорногірського хребта Карпат. Щоб побачити цю
+                  водойму, слід піднятися на висоту 1801 метр.
+                </p>
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./img/lake3.jpg" class="card-img-top lake3" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Біле озеро</h5>
+                <p class="card-text">
+                  Oзеро на Рівненщині карстового походження, а його вода – шовковиста на дотик через підвищений вміст гліцерину. Через це водойму часто називають "озером молодості".
+                </p>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container-xl">
+        <div class="foot-form">
+        <div class="input-group flex-nowrap">
+  <span class="input-group-text" id="addon-wrapping">@</span>
+  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+<div class="input-group">
+  <span class="input-group-text">First and last name</span>
+  <input type="text" aria-label="First name" class="form-control">
+  <input type="text" aria-label="Last name" class="form-control">
+</div>
+</div>
+      </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
